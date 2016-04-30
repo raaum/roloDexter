@@ -1,0 +1,19 @@
+{
+  "name": "roloDexter",
+  "version": "1.0.0",
+  "description": "An AngularJS JSON data sourced contact navigator widget with browse and search functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raaum/roloDexter.git"
+  },
+  "author": "Greg Raaum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raaum/roloDexter/issues"
+  },
+  "homepage": "https://github.com/raaum/roloDexter#readme"
+}
