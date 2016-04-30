@@ -1,7 +1,7 @@
 /* styles.css */
 
 #roloDexter {
-	width: 600px;
+	width: 500px;
 	padding: 35px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -12,36 +12,59 @@
 }
 
 .contact-info {
-	margin-bottom: 5px;
-	padding-bottom: 5px;
+	margin-bottom: 2px;
+	padding-bottom: 4px;
 	opacity: 0.8;
 }
 
 p {
+	margin: 0;
+	padding: 0;
+	padding-left: 3px;
 	border-bottom: 1px solid lightblue;
-	font-size: .95em;
+	font-size: .9em;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 h4 {
 	border-bottom: 1px solid lightblue;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 p.notes {
 	font-style: italic;
+	overflow: visible;
+	white-space: wrap;
 }
 
 .contact {
 
 }
 
+form {
+	padding-bottom: 35px;
+}
+
 .contact label {
+	margin: 0;
+	padding: 0;
 	text-align: right;
 	float: right;
-	opacity: 0.5;
+	opacity: 0.4;
 	white-space: nowrap;
-	overflow-x: hidden;
+	overflow: hidden;
 	text-overflow: ellipsis;
-	width: 110px;
+	width: 15%;
 	font-style: normal;
-	font-size: .85em;
+	font-size: .975em;
+	position: relative;
+	margin-right: 4px;
+}
+
+label.name {
+	font-size: 0.675em;
+	position: relative;
+	top: 3px;
 }

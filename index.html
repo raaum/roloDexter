@@ -16,11 +16,11 @@
 			<div class="row">
 				<div class="form-group col-md-12">
 					<form role="form">
-						<label for="name">Enter Name</label>
-						<input id="name" class="form-control" type="text" ng-model="name" />
+						<input id="search" class="form-control search" placeholder="Search" type="text" ng-model="name" />
 					</form>
 					<div ng-controller="roloCtrl" class="contact">
 						<h4 class="contact-info">
+							<label class="name">name</label>
 							{{ contact.name }}
 						</h4>
 						<p class="contact-info">
