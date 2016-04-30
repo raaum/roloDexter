@@ -19,16 +19,26 @@
 						<label for="name">Enter Name</label>
 						<input id="name" class="form-control" type="text" ng-model="name" />
 					</form>
-					<div ng-controller="roloCtrl">
-						<h3>{{ contact.name }}</h3>
-						<p>{{ contact.company }}</p>
-						<p>{{ contact.phone }}</p>
-						<p>
+					<div ng-controller="roloCtrl" class="contact">
+						<h3 class="contact-info">
+							{{ contact.name }}
+						</h3>
+						<p class="contact-info">
+							<label>company</label>
+							{{ contact.company }}</p>
+						<p class="contact-info">
+							<label>phone</label>
+							{{ contact.phone }}</p>
+						<p class="contact-info">
+							<label>email</label>
 							<a href="mailto:{{contact.email}}">
 								{{ contact.email }}
 							</a>
 						</p>
-						<p>{{ contact.notes }}</p>
+						<p class="contact-info notes">
+							<label>notes</label>
+							{{ contact.notes }}
+						</p>
 					</div>
 				</div>
 			</div>
