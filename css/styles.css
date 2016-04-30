@@ -14,6 +14,7 @@
 .contact-info {
 	margin-bottom: 5px;
 	padding-bottom: 5px;
+	opacity: 0.8;
 }
 
 p {
@@ -36,7 +37,7 @@ p.notes {
 .contact label {
 	text-align: right;
 	float: right;
-	opacity: 0.3;
+	opacity: 0.5;
 	white-space: nowrap;
 	overflow-x: hidden;
 	text-overflow: ellipsis;
