@@ -1,0 +1,24 @@
+{
+  "name": "roloDexter",
+  "description": "A contact navigator widget/app with JSON data sourced browse and search functionality.  Uses AngularJS and Bootstrap.",
+  "main": "index.html",
+  "authors": [
+    "Greg Raaum"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/raaum/roloDexter",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#1.2.9"
+  }
+}
