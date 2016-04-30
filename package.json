@@ -1,7 +1,7 @@
 {
   "name": "roloDexter",
   "version": "1.0.0",
-  "description": "An AngularJS contacts navigator module with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.",
+  "description": "An AngularJS contacts navigator widget with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.",
   "main": "index.html",
   "scripts": {
     "test": ""
