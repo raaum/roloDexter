@@ -1,6 +1,6 @@
 var roloDexter = angular.module('roloDexter', []);
 
-roloDexter.controller('roloCtrl', function roloCtlr($scope) {
+roloDexter.controller('roloCtrl', function roloCtrl($scope) {
 	$scope.contact = {
 		'name'     : "Greg Raaum",
 		'company'  : "N/A",
