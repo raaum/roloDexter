@@ -1,2 +1,2 @@
 # roloDexter
-A contact navigator widget/app with JSON data sourced browse and search functionality.  Uses AngularJS and Bootstrap.
+An AngularJS contact navigator module with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.
