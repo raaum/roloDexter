@@ -26,8 +26,8 @@
 		<div ng-controller="roloCtrl" class="col-md-12 main contact">
 			<ul class="records">
 				<li class="contact" ng-repeat="record in contacts">
-					<div class="record-photo" ng-if="record.photo">
-						<img src-"{{ record.photo }}" border=0></img>
+					<div class="record-photo" ng-if="record.photo" style="background-image: url({{ record.photo }});">
+						&nbsp;
 					</div>
 					<p class="contact-info">
 						<label class="record-name">name</label>

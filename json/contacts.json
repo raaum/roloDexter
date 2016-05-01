@@ -38,5 +38,15 @@
 		"twitter": "candobarb",
 		"notes": "Former nanny.  Plays rugby.",
 		"photo": "photos/Barbara_Waltshizzler.jpg"
+	},
+	{
+		"name": "Grandpa Palmer",
+		"organization": "Retired",
+		"email": "nate@grandpalmer.com",
+		"mobile": "555-555-5555",
+		"facebook": "grampz",
+		"twitter": "callmegrampz",
+		"notes": "Grandpa.  I think he's still alive.",
+		"photo": "photos/Grandpa_Palmer.jpg"
 	}
 ]
