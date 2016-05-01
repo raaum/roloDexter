@@ -1,7 +1,4 @@
-var roloDexter = angular.module('roloDexter', []);
-
-roloDexter.controller('roloCtrl', function roloCtrl($scope) {
-	$scope.contacts = [
+[
 	{
 		"name": "Bart Simpson",
 		"organization": "None",
@@ -42,5 +39,4 @@ roloDexter.controller('roloCtrl', function roloCtrl($scope) {
 		"notes": "Former nanny.  Plays rugby.",
 		"photo": "photos/Barbara_Waltshizzler.jpg"
 	}
-	]
-});
+]

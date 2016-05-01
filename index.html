@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" src="lib/angular/angular.min.js"></script>
 		<script type="text/javascript" src="js/controllers.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
@@ -18,27 +19,43 @@
 					<form role="form">
 						<input id="search" class="form-control search" placeholder="Search" type="text" ng-model="name" />
 					</form>
-					<div ng-controller="roloCtrl" class="contact">
-						<h4 class="contact-info">
-							<label class="name">name</label>
-							{{ contact.name }}
-						</h4>
-						<p class="contact-info">
-							<label>company</label>
-							{{ contact.company }}</p>
-						<p class="contact-info">
-							<label>phone</label>
-							{{ contact.phone }}</p>
-						<p class="contact-info">
-							<label>email</label>
-							<a href="mailto:{{contact.email}}">
-								{{ contact.email }}
-							</a>
-						</p>
-						<p class="contact-info notes">
-							<label>notes</label>
-							{{ contact.notes }}
-						</p>
+					<div ng-controller="roloCtrl" class="main contact">
+						<ul class="contactlist">
+							<li class="contact" ng-repeat="identity in contacts">
+								<p class="contact-info">
+									<label class="name">name</label>
+									<span class="contact-name">{{ identity.name }}</span>
+								</p>
+								<p class="contact-info">
+									<label>company</label>
+									<span>{{ identity.organization }}</span>
+								</p>
+								<p class="contact-info">
+									<label>mobile</label>
+									<span>{{ identity.mobile }}</span>
+								</p>
+								<p class="contact-info">
+									<label>email</label>
+									<span>
+										<a href="mailto:{{ contact.email }}">
+											{{ identity.email }}
+										</a>
+									</span>
+								</p>
+								<p class="contact-info notes">
+									<label>notes</label>
+									<span>{{ identity.notes }}</span>
+								</p>
+								<p class="contact-info">
+									<label>facebook</label>
+									<span>{{ identity.facebook }}</span>
+								</p>
+								<p class="contact-info">
+									<label>twitter</label>
+									<span>{{ identity.twitter }}</span>
+								</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
