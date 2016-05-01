@@ -1,4 +1,4 @@
 # roloDexter
-An AngularJS contacts navigator widget with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.
+An AngularJS contacts navigator widget with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.  In progress. Image shown below is the current look.
 
 ![](/screenshots/screenshot.png)
