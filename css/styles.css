@@ -90,7 +90,7 @@ li:before {
 	content: " ";
 	padding-top: 15px;
 	padding-bottom: 15px;
-	border-top: 2px dashed #999;
+	border-top: 1px dashed #666;
 	position: relative;
 	display: block;
 	z-index: 2;
