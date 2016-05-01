@@ -22,6 +22,9 @@
 					<div ng-controller="roloCtrl" class="main contact">
 						<ul class="contactlist">
 							<li class="contact" ng-repeat="identity in contacts">
+								<div class="contact-photo" ng-if="identity.photo">
+									<img src-"{{ identity.photo }}" border=0>
+								</div>
 								<p class="contact-info">
 									<label class="name">name</label>
 									<span class="contact-name">{{ identity.name }}</span>
