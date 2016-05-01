@@ -12,6 +12,14 @@
 	box-shadow: 0px 3px 33px -6px rgba(0,0,0,0.56);
 }
 
+a{
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .contact-info {
 	margin-bottom: 2px;
 	padding-bottom: 4px;
@@ -33,13 +41,6 @@ span {
 	line-height: inherit;
 }
 
-h4 {
-	border-bottom: 1px solid lightblue;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	line-height: inherit;
-}
-
 p.notes {
 	font-style: italic;
 	overflow: visible;
@@ -48,6 +49,8 @@ p.notes {
 
 .contact-name {
 	font-size: 1.3em;
+	color: purple;
+	font-weight: bold;
 }
 
 form {
@@ -94,3 +97,4 @@ li:before {
 	width: calc(100% + 70px);
 	left: -35px;
 }
+
