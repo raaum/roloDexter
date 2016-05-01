@@ -13,11 +13,12 @@
 }
 
 a{
-	color: blue;
+	color: #775a1c;
 }
 
 a:hover {
 	text-decoration: underline;
+	color: #775a1c;
 }
 
 .contact-info {
@@ -49,7 +50,7 @@ span.record-notes {
 
 span.record-name {
 	font-size: 1.3em;
-	color: purple;
+	color: #775a1c;
 	font-weight: bold;
 }
 
