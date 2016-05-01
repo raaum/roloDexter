@@ -59,12 +59,12 @@ form {
 
 div.record-photo {
 	display: inline-block;
-	width: 110px;
-	height: 140px;
-	border: 1px solid #919191;
+	width: 116px;
+	height: 146px;
+	border: 1px solid #ababab;
 	background-color: #fff;
 	background-repeat: no-repeat;
-	background-size: 110px auto;
+	background-size: 110px 140px;
 	background-position: center center;
 	opacity: 1;
 	float: left;
