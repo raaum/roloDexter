@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>roloDexter</title>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="description" content="An AngularJS contacts navigator widget with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="text/javascript" src="lib/angular/angular.min.js"></script>
-		<script type="text/javascript" src="js/controllers.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/reset.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
-		<div id="roloDexter" class="container" ng-app="roloDexter">
-			<div class="row">
-				<div class="form-group col-md-12">
-					<form role="form">
-						<input id="search" class="form-control search" placeholder="Search" type="text" ng-model="name" />
-					</form>
-					<div ng-controller="roloCtrl" class="main contact">
-						<ul class="contactlist">
-							<li class="contact" ng-repeat="identity in contacts">
-								<div class="contact-photo" ng-if="identity.photo">
-									<img src-"{{ identity.photo }}" border=0>
-								</div>
-								<p class="contact-info">
-									<label class="name">name</label>
-									<span class="contact-name">{{ identity.name }}</span>
-								</p>
-								<p class="contact-info">
-									<label>company</label>
-									<span>{{ identity.organization }}</span>
-								</p>
-								<p class="contact-info">
-									<label>mobile</label>
-									<span>{{ identity.mobile }}</span>
-								</p>
-								<p class="contact-info">
-									<label>email</label>
-									<span>
-										<a href="mailto:{{ identity.email }}">
-											{{ identity.email }}
-										</a>
-									</span>
-								</p>
-								<p class="contact-info notes">
-									<label>notes</label>
-									<span>{{ identity.notes }}</span>
-								</p>
-								<p class="contact-info">
-									<label>facebook</label>
-									<span>{{ identity.facebook }}</span>
-								</p>
-								<p class="contact-info">
-									<label>twitter</label>
-									<span>{{ identity.twitter }}</span>
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+<head>
+	<title>roloDexter</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="An AngularJS contacts navigator widget with browse, search, and sort functionality using JSON data, Google fonts and Bootstrap 3.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<div id="roloDexter" class="container" ng-app="roloDexter">
+	<div class="row">
+		<div class="form-group col-md-12">
+			<form role="form">
+				<input id="search" class="form-control search" placeholder="Search" type="text" ng-model="name" />
+			</form>
 		</div>
-	</body>
+	</div>
+	<div class="row">
+		<div ng-controller="roloCtrl" class="col-md-12 main contact">
+			<ul class="contactlist">
+				<li class="contact" ng-repeat="identity in contacts">
+					<div class="contact-photo" ng-if="identity.photo">
+						<img src-"{{ identity.photo }}" border=0>
+					</div>
+					<p class="contact-info">
+						<label class="name">name</label>
+						<span class="contact-name">{{ identity.name }}</span>
+					</p>
+					<p class="contact-info">
+						<label>company</label>
+						<span>{{ identity.organization }}</span>
+					</p>
+					<p class="contact-info">
+						<label>mobile</label>
+						<span>{{ identity.mobile }}</span>
+					</p>
+					<p class="contact-info">
+						<label>email</label>
+						<span><a href="mailto:{{ identity.email }}">{{ identity.email }}</a></span>
+					</p>
+					<p class="contact-info notes">
+						<label>notes</label>
+						<span>{{ identity.notes }}</span>
+					</p>
+					<p class="contact-info">
+						<label>facebook</label>
+						<span>{{ identity.facebook }}</span>
+					</p>
+					<p class="contact-info">
+						<label>twitter</label>
+						<span>{{ identity.twitter }}</span>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
 </html>
