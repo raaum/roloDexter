@@ -7,4 +7,4 @@ An AngularJS contacts navigator widget with browse, search, and sort functionali
 
 Image shown below is the current look.
 
-![](/screenshots/screenshot.png)
+![](/screenshots/screenshot2.png)
