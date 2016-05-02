@@ -5,6 +5,7 @@ An AngularJS contacts navigator widget with browse, search, and sort functionali
 - Written by Greg Raaum
 - In progress
 
-Image shown below is the current look.
+The current look...
+
 ![](/screenshots/screenshot3.png?104)
 
