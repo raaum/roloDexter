@@ -59,6 +59,7 @@ form {
 }
 
 div.record-photo {
+	content: '&nbsp;';
 	display: inline-block;
 	width: 116px;
 	height: 146px;
