@@ -16,16 +16,17 @@
 
 <div id="roloDexter" class="container" ng-app="roloDexter">
 	<div class="row">
-		<div class="form-group col-md-12">
+		<div class="search cf form-group col-md-12">
 			<form role="form">
-				<input id="search" class="form-control search" placeholder="Search" type="text" ng-model="name"></input>
+				<label class=search>search</label>
+				<input ng-model="query" id="search" class="form-control search" placeholder="Search Contacts" type="text" ng-model="name" autofocus></input>
 			</form>
 		</div>
 	</div>
 	<div class="row">
 		<div ng-controller="roloCtrl" class="col-md-12 main contact">
 			<ul class="records">
-				<li class="contact" ng-repeat="record in contacts">
+				<li class="contact" ng-repeat="record in contacts | filter: query">
 					<div class="record-photo" ng-show="record.photo" style="background-image: url({{ record.photo }});">
 					</div>
 					<div class="social-icons">
@@ -33,7 +34,7 @@
 					</div>
 					<p class="contact-info">
 						<label class="record-name">name</label>
-						<span class="record-name">{{ record.name }}</span>
+						<span class="record-name">{{ record.name | uppercase }}</span>
 					</p>
 					<p class="contact-info">
 						<label class="record-organization">company</label>
@@ -53,11 +54,11 @@
 					</p>
 					<p class="contact-info">
 						<label class="record-facebook">facebook</label>
-						<span class="record-facebook">{{ record.facebook }}</span>
+						<span class="record-facebook">@{{ record.facebook }}</span>
 					</p>
 					<p class="contact-info">
 						<label class="record-twitter">twitter</label>
-						<span class="record-twitter">{{ record.twitter }}</span>
+						<span class="record-twitter">@{{ record.twitter }}</span>
 					</p>
 				</li>
 			</ul>

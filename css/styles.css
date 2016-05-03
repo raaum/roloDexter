@@ -30,7 +30,7 @@ a:hover {
 p {
 	margin: 0;
 	padding: 0;
-	padding-left: 3px;
+	padding-left: 2px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	line-height: inherit;
@@ -49,9 +49,11 @@ span.record-notes {
 }
 
 span.record-name {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: #775a1c;
 	font-weight: bold;
+	white-space: nowrap;
+	width: 80%:
 }
 
 form {
@@ -106,7 +108,17 @@ div.record-photo {
 label.record-name {
 	font-size: .95em;
 	position: relative;
-	top: 6px;}
+	top: 6px;
+}
+
+label.search {
+	font-weight: bold;
+	opacity: 0.6;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+}
 
 
 p.contact-info {
