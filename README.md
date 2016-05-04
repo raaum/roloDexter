@@ -3,5 +3,5 @@ An AngularJS contacts navigator widget with browse, search, and sort functionali
 
 The current look...
 
-![](/screenshots/rolodexter.png)
+![](/screenshots/current.png)
 
