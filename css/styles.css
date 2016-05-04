@@ -11,46 +11,36 @@
 	-moz-box-shadow: 0px 3px 33px -6px rgba(0,0,0,0.56);
 	box-shadow: 0px 3px 33px -6px rgba(0,0,0,0.56);
 }
-
-a{
+a {
 	color: #775a1c;
 }
-
 a:hover {
 	text-decoration: underline;
 	color: #775a1c;
 }
-
 .input-group-addon {
 	opacity: 0.7;
 }
-
 label {
 	opacity: 0.5;
 	text-transform: capitalize;
 }
-
-
 div.input-group {
 	width: 100%;
 	white-space: nowrap;
 }
-
 input#search{
 	width: 260px;
 	max-width: 260px;
 }
-
 input, select {
 	opacity: 0.7;
 }
-
 .contact-info {
 	margin-bottom: 2px;
 	padding-bottom: 4px;
 	opacity: 0.8;
 }
-
 p {
 	margin: 0;
 	padding: 0;
@@ -59,19 +49,16 @@ p {
 	text-overflow: ellipsis;
 	line-height: inherit;
 }
-
 span {
 	font-size: 100%;
 	line-height: inherit;
 	margin-left: 5px;
 }
-
 span.record-notes {
 	font-style: italic;
 	overflow: visible;
 	white-space: wrap;
 }
-
 span.record-name {
 	font-size: 1.2em;
 	color: #775a1c;
@@ -79,11 +66,9 @@ span.record-name {
 	white-space: nowrap;
 	width: 80%:
 }
-
 form {
 	padding-bottom: 35px;
 }
-
 div.record-photo {
 	content: '&nbsp;';
 	display: inline-block;
@@ -99,7 +84,6 @@ div.record-photo {
 	margin-top: 5px;
 	border-radius: 3px;
 }
-
 .social-icons {
 	position: absolute;
 	display: inline-block;
@@ -110,7 +94,6 @@ div.record-photo {
 	opacity: 0.75;
 	overflow-x: hidden;
 }
-
 .contact label {
 	line-height: inherit;
 	margin: 0;
@@ -128,13 +111,11 @@ div.record-photo {
 	margin-right: 5px;
 	color:	chocolate;
 }
-
 label.record-name {
 	font-size: .95em;
 	position: relative;
 	top: 6px;
 }
-
 label.search {
 	font-weight: bold;
 	opacity: 0.6;
@@ -143,7 +124,6 @@ label.search {
 	margin-bottom: 3px;
 	text-transform: uppercase;
 }
-
 p.contact-info {
 	content: " ";
 	padding-top: 2px;
@@ -155,13 +135,11 @@ p.contact-info {
 	display: block;
 	z-index: 2;
 }
-
 li {
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-
 li:before {
 	content: " ";
 	padding-top: 15px;
@@ -174,4 +152,3 @@ li:before {
 	left: -35px;
 	opacity: 0.6;
 }
-
