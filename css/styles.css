@@ -30,6 +30,17 @@ label {
 	text-transform: capitalize;
 }
 
+
+div.input-group {
+	width: 100%;
+	white-space: nowrap;
+}
+
+input#search{
+	width: 260px;
+	max-width: 260px;
+}
+
 input, select {
 	opacity: 0.7;
 }
