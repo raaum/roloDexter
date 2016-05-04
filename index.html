@@ -16,17 +16,31 @@
 
 <div id="roloDexter" class="container" ng-app="roloDexter">
 	<div class="row">
-		<div class="search cf form-group col-md-12">
-			<form role="form">
-				<label class=search>search</label>
-				<input ng-model="query" id="search" class="form-control search" placeholder="Search Contacts" type="text" ng-model="name" autofocus></input>
+		<div class="search cf col-md-12">
+			<form class="form-inline">
+				<div class="form-group">
+					 <div class="input-group">
+    					<span class="input-group-addon">search</span>
+    					<input ng-model="query" id="search" class="form-control search" placeholder="type anything" type="text" ng-model="name" autofocus></input>
+    				</div>
+					<div class="input-group">
+						<span class="input-group-addon">order by</span>
+						<select class="form-control" ng-model="orderFields" title="Order By">
+							<option value=""></option>
+							<option value="name">name</option>
+							<option value="company">company</option>
+							<option value="mobile">mobile</option>
+							<option value="email">email</option>
+						</select>
+					</div>
+				</div>
 			</form>
 		</div>
 	</div>
 	<div class="row">
 		<div ng-controller="roloCtrl" class="col-md-12 main contact">
 			<ul class="records">
-				<li class="contact" ng-repeat="record in contacts | filter: query">
+				<li class="contact" ng-repeat="record in contacts | filter: query | orderBy: orderFields">
 					<div class="record-photo" ng-show="record.photo" style="background-image: url({{ record.photo }});">
 					</div>
 					<div class="social-icons">
