@@ -17,14 +17,21 @@
 <div id="roloDexter" class="container" ng-app="roloDexter">
 	<div class="row">
 		<div class="search cf col-md-12">
-			<label>search contacts</label>
+
+
+			<label class="title">search contacts</label>
+			<label class="form-group pull-right orderby">
+				<input type="radio" ng-model="direction" name="direction" checked> Ascending
+				<input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
+			</label>
+
 			<form class="form-inline">
 				<div class="form-group">
 					<div class="input-group">
-						<span class="input-group-addon">search for</span>
+						<span class="input-group-addon">search</span>
 						<input ng-model="query" id="search" class="form-control search" placeholder="type anything" type="text" ng-model="name" autofocus></input>
-						<span class="input-group-addon">order by</span>
-						<select class="form-control" ng-model="orderFields" title="Order By">
+						<span class="input-group-addon sort">order by</span>
+						<select class="form-control orderby" ng-model="orderFields" title="Order By">
 							<option value=""></option>
 							<option value="name">name</option>
 							<option value="company">company</option>
@@ -32,6 +39,7 @@
 							<option value="email">email</option>
 						</select>
 					</div>
+
 				</div>
 			</form>
 		</div>
@@ -39,7 +47,7 @@
 	<div class="row">
 		<div ng-controller="roloCtrl" class="col-md-12 main contact">
 			<ul class="records">
-				<li class="contact" ng-repeat="record in contacts | filter: query | orderBy: orderFields">
+				<li class="contact" ng-repeat="record in contacts | filter: query | orderBy: orderFields:direction">
 					<div class="record-photo" ng-show="record.photo" style="background-image: url({{ record.photo }});">
 					</div>
 					<div class="social-icons">
