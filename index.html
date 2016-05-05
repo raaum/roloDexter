@@ -17,15 +17,12 @@
 <div id="roloDexter" class="container" ng-app="roloDexter">
 	<div class="row">
 		<div class="search cf col-md-12">
-
-
-			<label class="title">search contacts</label>
-			<label class="form-group pull-right orderby">
-				<input type="radio" ng-model="direction" name="direction" checked> Ascending
-				<input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
-			</label>
-
 			<form class="form-inline">
+				<label class="title">search contacts</label>
+				<label class="form-group pull-right orderby">
+					<input type="radio" ng-model="direction" name="direction" checked> Ascending
+					<input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
+				</label>
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon">search</span>
@@ -39,7 +36,6 @@
 							<option value="email">email</option>
 						</select>
 					</div>
-
 				</div>
 			</form>
 		</div>
