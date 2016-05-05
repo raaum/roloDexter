@@ -11,5 +11,5 @@ This is really meant to be used as more of a boilerplate to whatever you want to
 
 The current look...
 
-![](/screenshots/current-screen.png)
+![](/screenshots/rolo.png)
 
