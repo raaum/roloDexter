@@ -1,0 +1,40 @@
+<section class="contactinfo">
+  <div class="contact cf" ng-model="artists">
+    <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+    <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+    <h1>{{artists[whichItem].name}}</h1>
+    <div class="info">
+		<span class="item-photo" ng-show="item.photo" style="background-image: url({{ item.photo }});"></s>
+		<div class="social-icons"><img src="images/social-icons.jpg" border=0 width=116></div>pan
+		<p class="contact-info">
+			<label class="item-name">name</label>
+			<span class="item-name">{{ item.name | uppercase }}</span>
+		</p>
+		<p class="contact-info">
+			<label class="item-organization">company</label>
+			<span class="item-organization">{{ item.organization }}</span>
+		</p>
+		<p class="contact-info">
+			<label class="item-mobile">mobile</label>
+			<span class="item-mobile">{{ item.mobile }}</span>
+		</p>
+		<p class="contact-info">
+			<label class="item-email">email</label>
+			<span class="item-email"><a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+		</p>
+		<p class="contact-info">
+			<label class="item-notes">notes</label>
+			<span class="item-notes">{{ item.notes }}</span>
+		</p>
+		<p class="contact-info">
+			<label class="item-facebook">facebook</label>
+			<span class="item-facebook">@{{ item.facebook }}</span>
+		</p>
+		<p class="contact-info">
+			<label class="item-twitter">twitter</label>
+			<span class="item-twitter">@{{ item.twitter }}</span>
+		</p>
+    </div>
+  </div>
+  <a href="index.html">&laquo; Back to search</a>
+</section>

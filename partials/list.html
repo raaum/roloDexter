@@ -1,0 +1,71 @@
+<section class="list">
+	<div id="roloDexter" class="container">
+		<div class="row">
+			<div class="search cf col-md-12">
+				<div class="form-inline">
+					<label class="title">search contacts</label>
+					<label class="form-group pull-right orderby">
+						<input type="radio" ng-model="direction" name="direction" checked> Ascending
+						<input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
+					</label>
+				</div>
+				<div class="form-inline">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">search</span>
+							<input ng-model="query" id="search" class="form-control search" placeholder="type anything" type="text" ng-model="name" autofocus></input>
+							<span class="input-group-addon sort">sort</span>
+							<select class="form-control orderby" ng-model="orderField" title="Order By">
+								<option value=""></option>
+								<option value="name">name</option>
+								<option value="company">company</option>
+								<option value="mobile">mobile</option>
+								<option value="email">email</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contactlist" class="row">
+			<div class="col-md-12 main contact">
+				<ul class="items">
+					<li class="contact" ng-repeat="item in contacts | filter: query | orderBy: orderField:direction">
+						<a href="#/details/{{ contacts.indexOf(item) }}">
+							<span class="item-photo" ng-show="item.photo" style="background-image: url({{ item.photo }});"></span>
+							<div class="social-icons"><img src="images/social-icons.jpg" border=0 width=116></div>
+							<p class="contact-info">
+								<label class="item-name">name</label>
+								<span class="item-name">{{ item.name | uppercase }}</span>
+							</p>
+							<p class="contact-info">
+								<label class="item-organization">company</label>
+								<span class="item-organization">{{ item.organization }}</span>
+							</p>
+							<p class="contact-info">
+								<label class="item-mobile">mobile</label>
+								<span class="item-mobile">{{ item.mobile }}</span>
+							</p>
+							<p class="contact-info">
+								<label class="item-email">email</label>
+								<span class="item-email"><a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+							</p>
+							<p class="contact-info">
+								<label class="item-notes">notes</label>
+								<span class="item-notes">{{ item.notes }}</span>
+							</p>
+							<p class="contact-info">
+								<label class="item-facebook">facebook</label>
+								<span class="item-facebook">@{{ item.facebook }}</span>
+							</p>
+							<p class="contact-info">
+								<label class="item-twitter">twitter</label>
+								<span class="item-twitter">@{{ item.twitter }}</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>

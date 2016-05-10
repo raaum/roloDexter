@@ -14,6 +14,9 @@
 a {
 	color: #775a1c;
 }
+#contactlist {
+	margin-top: 35px;
+}
 a:hover {
 	text-decoration: underline;
 	color: #775a1c;
@@ -24,6 +27,10 @@ a:hover {
 label {
 	opacity: 0.5;
 	text-transform: capitalize;
+}
+
+li.contact {
+	//height: 250px;
 }
 
 label.title{
@@ -83,12 +90,12 @@ span {
 	line-height: inherit;
 	margin-left: 5px;
 }
-span.record-notes {
+span.item-notes {
 	font-style: italic;
 	overflow: visible;
 	white-space: wrap;
 }
-span.record-name {
+span.item-name {
 	font-size: 1.2em;
 	color: #775a1c;
 	font-weight: bold;
@@ -98,7 +105,7 @@ span.record-name {
 form {
 	padding-bottom: 35px;
 }
-div.record-photo {
+span.item-photo {
 	content: '&nbsp;';
 	display: inline-block;
 	width: 116px;
@@ -140,7 +147,7 @@ div.record-photo {
 	margin-right: 5px;
 	color:	chocolate;
 }
-label.record-name {
+label.item-name {
 	font-size: .95em;
 	position: relative;
 	top: 6px;
